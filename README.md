@@ -1,4 +1,4 @@
-# Code 201: Foundations of Software Development - Core Syllabus
+# Code 201: Foundations of Software Development
 
 ## Course Information
 
