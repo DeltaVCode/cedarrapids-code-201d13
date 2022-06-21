@@ -1,0 +1,23 @@
+/*
+    FILE: style.css
+    DATE: 2022-06-21    ISO-8601
+    AUTHOR: Code Fellows
+    DESCRIPTION:  General styling
+*/
+
+h1 {
+  font-family: helvetica;
+}
+
+p {
+  color: red;
+}
+
+section p.more-content {
+  background-color: #ff0000;
+  color: white;
+}
+
+.more-content {
+  background-color: #0000ff;
+}
