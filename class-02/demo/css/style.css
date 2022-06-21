@@ -5,6 +5,10 @@
     DESCRIPTION:  General styling
 */
 
+body {
+  background-color: aliceblue;
+}
+
 h1 {
   font-family: helvetica;
 }
