@@ -1,0 +1,38 @@
+/*
+  FILE: style.css
+  DATE: 2022-06-24
+*/
+
+body {
+  background-image: url("/images/background.jpg");
+  background-color: aliceblue;
+  margin: 0 auto;
+  width: 90%;
+}
+
+header h1 {
+  color: white;
+  text-shadow: 2px 2px red;
+}
+
+section {
+  background-color: antiquewhite;
+  padding: 1em;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+
+figure {
+  border: 1px solid black;
+  display: inline-block;
+  float: right;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 5px;
+  width: 20%;
+}
+
+figure img {
+  border: 5px ridge goldenrod;
+  max-width: 150px;
+}
