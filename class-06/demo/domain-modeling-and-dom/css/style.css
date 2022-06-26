@@ -1,0 +1,26 @@
+* {
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: antiquewhite;
+  width: 90%;
+  margin: 0 auto;
+}
+
+article {
+  display: inline-block;
+  border: 1px solid darkolivegreen;
+  padding: 0.5rem;
+  min-height: 400px;
+}
+
+article h2 {
+  color: brown;
+  font-kerning: 0.5rem;
+}
+
+article img {
+  width: 90%;
+  margin: 0 auto;
+}
