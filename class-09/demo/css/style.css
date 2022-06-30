@@ -1,0 +1,14 @@
+/*
+  FILE: afterstyle.css
+  DATE: 2022-06-30
+*/
+
+body {
+  background-color: aliceblue;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.errorSpan {
+  color: red;
+}

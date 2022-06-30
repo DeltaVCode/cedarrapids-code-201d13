@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <h1>Class 09 Demo</h1>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/app.js"></script>
+  </head>
+  <body onload="initialize()">
+    <header>
+      <title>Class 09 Demo</title>
+    </header>
+    <main>
+      <section>
+        <h2>Kitten Data</h2>
+        <p>These are the current kitten records.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Interests</th>
+              <th>Good with Kids</th>
+              <th>Good with Dogs</th>
+              <th>Good with Other Cats</th>
+            </tr>
+          </thead>
+          <tbody id="kittenTable"></tbody>
+        </table>
+      </section>
+      <section>
+        <h2>New Kitten</h2>
+        <!-- 
+* @param {string} name - name of the kitten
+ * @param {array} interests - an array of strings
+ * @param {boolean} isGoodWithKids - true if good with kids
+ * @param {boolean} isGoodWithDogs - true of good with dogs
+ * @param {boolean} isGoodWithOtherCats - true if good with other cats
+        -->
+        <form>
+          <label for="kittenName">Name *</label><br />
+          <span id="kittenNameError" class="errorSpan"></span>
+          <input type="text" id="kittenName" name="kittenName" required /><br />
+          <label for="interests">Interests</label><br />
+          <input
+            type="text"
+            id="interests"
+            name="interests"
+            placeholder="comma separated list of interests"
+          /><br />
+          <input type="checkbox" id="kids" name="kids" />
+          <label for="kids">Good with Kids</label><br />
+          <input type="checkbox" id="dogs" name="dogs" />
+          <label for="dogs">Good with Dogs</label><br />
+          <input type="checkbox" id="cats" name="cats" />
+          <label for="cats">Good with Cats</label><br />
+          <input type="button" value="Add Kitten" onclick="addKitten()" /><br />
+          <p>Required items *</p>
+        </form>
+      </section>
+    </main>
+    <foot>
+      <p>&copy; 2022</p>
+    </foot>
+  </body>
+</html>
