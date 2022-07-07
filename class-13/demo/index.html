@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage Example</title>
+    <script src="js/car.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body onload="initialize()">
+    <header>
+      <h1>Local Storage Example</h1>
+    </header>
+    <main>
+      <section id="newCarForm">
+        <h2>Add a Car</h2>
+        <label for="make">Make</label><br />
+        <input type="text" id="make" /><br />
+        <label for="model">Model</label><br />
+        <input type="text" id="model" /><br />
+        <label for="modelYear">Model Year</label><br />
+        <input type="number" id="modelYear" /><br />
+        <button id="addCarButton">Add Car</button>
+      </section>
+      <section id="existingCars">
+        <h2>Current Cars</h2>
+        <span id="carData"></span>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2022</p>
+    </footer>
+  </body>
+</html>

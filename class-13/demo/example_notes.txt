@@ -1,0 +1,73 @@
+let carB = {
+   "make":"Chevrolet",
+   "model":"Nova"
+   "modelYear":1969
+}
+
+
+/**
+ * Constructor for Car objects.
+ *
+ * @param {string} make - the manufacturer of the car
+ * @param {string} model - the model of the car 
+ * @param {number} modelYear - the model year of the car 
+ */
+function Car(make, model, modelYear){
+	this.make = make;
+	this.model = model;
+	this.modelYear = modelYear;
+}
+
+Car.prototype.getAge = function(){...}
+
+let myCar = new Car("Volvo", "164E", 1973);
+
+let carC = new Car(carB.make, carB.model, carB.modelYear);
+
+localstorage.setItem("myCar", JSON.stringify(myCar));
+
+/********************************************************************
+Data Operations - CRUD
+-	Create Record
+	-	create a brand new record
+-	Read Record 
+	-	read a single record
+	-	read all records 
+	-	read a group of records based on criteria (filter)
+-	Update Record
+	-	change attribute values of existing record
+	-	usually will not change the unique identifier
+-	Delete Record
+	-	Remove from the data storage
+	-	If possible, just mark as deactivated instead of delete
+
+localstorage
+-	setItem(key, value) -- create/update
+-	getItem(key) -- read 
+-	removeItem(key) -- delete
+
+
+Steps: 
+-	Create 
+	1) make the JavaScript item
+	2) setItem 
+-	Read 
+	1) getItem 
+	2) assign to variable or use
+-	Update 
+	1) getItem 
+	2) change the values 
+	3) setItem with same key
+-	Delete
+	1) removeItem
+
+
+
+
+
+
+
+
+
+
+
