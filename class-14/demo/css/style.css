@@ -1,0 +1,101 @@
+/*
+  FILE:  style.css
+  DATE:  2022-07-08
+  AUTHOR: Example
+  DESCRIPTION: A CSS file to demonstrate CSS animations.
+
+  Based on eaxamples from https://www.w3schools.com/css/css3_animations.asp
+
+*/
+
+body {
+  width: 90%;
+  margin: 0 auto;
+  background-color: antiquewhite;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+/*
+  Animate the demoDiv
+*/
+@keyframes demoFrames {
+  0% {
+    background-color: white;
+    width: 5rem;
+  }
+  50% {
+    background-color: lawngreen;
+    width: 17.5rem;
+  }
+  100% {
+    background-color: green;
+    width: 25rem;
+  }
+}
+
+#demoDiv {
+  background-color: white;
+  width: 5rem;
+  min-height: 5rem;
+  border-radius: 5px;
+  animation-name: demoFrames;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: 4; /* set to infinite for permament loop */
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+
+/*
+  Animation for textDemoDiv
+*/
+@keyframes spookyText {
+  from {
+    color: black;
+  }
+  to {
+    color: red;
+  }
+}
+
+#textDemoDiv {
+  background-color: black;
+  color: black;
+  border-radius: 5px;
+  border: 5px ridge red;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  font-size: 150%;
+  font-weight: bold;
+  font-family: "Griffy", cursive;
+  font-kerning: 0.5rem;
+  box-shadow: 2px 2px darkgray;
+}
+
+#p1 {
+  animation-name: spookyText;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+#p2 {
+  animation-name: spookyText;
+  animation-duration: 5s;
+  animation-delay: 7s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+#p3 {
+  animation-name: spookyText;
+  animation-duration: 5s;
+  animation-delay: 14s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
