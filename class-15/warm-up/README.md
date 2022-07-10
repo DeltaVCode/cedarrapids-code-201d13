@@ -9,7 +9,7 @@ const num = parseInt("2");
 ```
 
 You would say:
-> Declare a variable called number and assign it the return value from running the parseInt function with the argument "2"
+> Declare a constant called number and assign it the return value from running the parseInt function with the argument "2"
 
 ## Javascript Fundamentals
 
